@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseTech DIGITALS | Professional Tech Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --deep-green: #0a2e1f;
+            --gold: #c5a059;
+            --off-white: #f4f4f4;
+            --charcoal: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--charcoal);
+            color: var(--off-white);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(10, 46, 31, 0.8), rgba(26, 26, 26, 1)), url('https://your-image-path.jpg') center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background: var(--deep-green);
+        }
+
+        h1 { font-size: 3rem; color: var(--gold); margin: 0; letter-spacing: 2px; }
+        p.tagline { font-size: 1.2rem; font-style: italic; opacity: 0.8; }
+
+        /* Project Grid */
+        .container { padding: 50px 10%; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--gold);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); background: #2a2a2a; }
+        .card h3 { color: var(--gold); }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--gold);
+            color: var(--deep-green);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="logo-placeholder">
+            </div>
+        <h1>WISETECH DIGITALS</h1>
+        <p class="tagline">Engineered to Endure. Innovation with Authority.</p>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align:center; border-bottom: 2px solid var(--gold); padding-bottom: 10px;">Our Portfolio</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>BoosterSpark</h3>
+                <p>Advanced SMM Panel solutions for digital growth and social presence.</p>
+                <a href="#" class="btn">View Case Study</a>
+            </div>
+            <div class="card">
+                <h3>Zenaa Mega Game Center</h3>
+                <p>Digital infrastructure and branding for premium entertainment hubs.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <h3>University Connect</h3>
+                <p>A collaborative platform linking students across tertiary institutions in Ghana.</p>
+                <a href="#" class="btn">Explore Group</a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align:center; padding: 40px; background: var(--deep-green);">
+        <p>&copy; 2026 WiseTech DIGITALS. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
